@@ -1,0 +1,25 @@
+{
+  "name": "webhook-inbox-replayer",
+  "version": "1.0.0",
+  "description": "Durable webhook inbox pattern with async processing, idempotency, retries, replay, and partition-aware execution.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "seed": "node scripts/seed-demo.js",
+    "demo:duplicates": "node scripts/send-duplicate-webhooks.js",
+    "replay": "node scripts/replay-failed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "plantuml-cli": "^1.2026.1"
+  },
+  "license": "MIT"
+}
