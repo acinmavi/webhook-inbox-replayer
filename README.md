@@ -107,7 +107,6 @@ This repo is intentionally honest about what can still go wrong:
 ### Prerequisites
 
 - Node.js `>= 20`
-- Java installed locally for PlantUML rendering
 
 ### Install
 
